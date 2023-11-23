@@ -1,0 +1,209 @@
+/* * { 
+    margin:0;
+    padding:0; 
+    box-sizing: border-box;
+}
+*/
+body {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: lightpink;
+    background-size: cover;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+        "n n"
+        "a j"
+        "f f"; 
+}
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+/*________________________________*/
+aside {
+    background-color: white;
+    padding: 5px;
+
+}
+.kosar1 {
+    padding:0;
+}
+.kosar1 li {
+    display: grid;
+    grid-template-columns: 2fr 1fr 10px;
+    
+    
+}
+.kosar1 li span:first-child {
+    text-align: left;
+}
+
+.x {
+    color: red;
+    border: solid black 1px;
+}
+
+.kosartartalma li {
+    list-style-type: none;
+}
+
+.kosar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+span {
+    text-align: right;
+}
+
+
+
+
+
+.osszar {
+    border-top: solid red 2px;
+    color: red;
+    text-align: center;
+}
+
+.fizetes {
+    border: solid black 1px;
+
+}
+
+/*____________________________*/
+img {
+    width: 100%;
+}
+
+p, h2, h1 {
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+.elso {
+    border: none;
+    padding: 5px;
+    /*margin-right: 5px;*/
+    background-color: white;
+    margin: 6px;
+}
+
+.masodik {
+    border: none;
+    padding: 5px;
+    /*margin-right: 5px;*/
+    background-color: white;
+    margin: 6px;
+}
+
+.harmadik {
+    border: none;
+    padding: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+.negyedik {
+    border: none;
+    padding: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+.otodik {
+    border: none;
+    padding: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+.hatodik {
+    border: none;
+    padding: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+.hetedik {
+    border: none;
+    padding: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+
+
+article {
+    grid-area: a;
+}
+
+nav {
+    grid-area: n;
+}
+
+footer {
+    grid-area: f;
+}
+
+aside {
+    grid-area: j;
+}
+
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style-type: none;
+    text-align: left;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 450px) {
+    body, main {
+        font-size:12px;
+        background-image: url(hatter.jpg);
+        background-size: cover;
+        width:100%;
+    }
+    main {
+        
+        grid-template-columns:1fr; 
+        grid-template-areas: 
+            "n"
+            "j"
+            "a"
+            "f"; 
+  }
+
+  nav ul {
+    
+    grid-template-columns: 1fr; 
+    gap: 5px; 
+    list-style-type: none;
+    text-align: center;
+    }
+    article {
+        grid-template-columns: 1fr; 
+        gap: 5px; 
+    }
+}
+
